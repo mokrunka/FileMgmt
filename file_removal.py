@@ -5,6 +5,7 @@ pathName = input("Type in the absolute pathname of the directory you want to rem
 dir_to_remove = Path(pathName)
 
 #empty list of the timestamps each of the files in dir_to_remove
+#example, the files are in the directory: R:\test\Test Dir for removal, input 'R:\test\Test Dir for removal' here
 list_of_timestamps = []
 
 with os.scandir(dir_to_remove) as dir_contents:
