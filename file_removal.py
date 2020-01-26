@@ -25,4 +25,6 @@ for file in list_of_timestamps:
     os.remove(full_file_name)
     file_counter += 1
 
-print("{file_counter} files were removed.")
+
+print(f"{file_counter} files were removed.")
+print(f"The first 10 deleted files are {list_of_timestamps[0:10]}")
