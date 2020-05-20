@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 
+# store the pathname for the dir to be removed
 pathName = input("Type in the absolute pathname of the directory you want to remove: ")
 dir_to_remove = Path(pathName)
 
