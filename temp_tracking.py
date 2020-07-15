@@ -11,7 +11,7 @@ with open(filename, 'r') as f:
 temperature = int(temperature)
 temperature = temperature / 1000
 
-log_filename = r'/home/user/Documents/temperature_log'
+log_filename = r'/home/mokrunka/Documents/temperature_log'
 
 # generate a timestamp to add to each line
 time_stamp = time.localtime()
@@ -20,7 +20,4 @@ current_time = time.strftime('%x %X', time_stamp)
 # open/create the logfile and append the current temp and time
 # note that this is going to run on a cronjob every 4 hours
 with open(log_filename, 'a') as l:
-        l.write(str(temperature) + ',' + str(current_time) + '\n')
-
-f.close()
-l.close()
+        l.write(f'{temperature}, {current_time}\n')
